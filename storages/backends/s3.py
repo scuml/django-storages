@@ -313,7 +313,7 @@ class S3Storage(CompressStorageMixin, BaseStorage):
     # settings/args are ignored.
     config = None
 
-    _signers: Dict[str, str] = {}
+    _signers = {}  # noqa: RUF012
 
     def __init__(self, **settings):
         omitted = object()

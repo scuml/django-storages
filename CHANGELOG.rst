@@ -10,16 +10,20 @@ S3
 - Pull ``AWS_SESSION_TOKEN`` from the environment (`#1399`_)
 - Fix newline handling for text mode files (`#1381`_)
 - Do not sign URLs when ``querystring_auth=False`` e.g public buckets or static files (`#1402`_)
+- Cache CloudFront Signers (`#1417`_)
 
 Azure
 -----
 
 - Fix ``collectstatic --clear`` (`#1403`_)
+- Add ``mode`` kwarg to ``.url()`` to support creation of signed URLs for upload (`#1414`_)
 
 .. _#1399: https://github.com/jschneier/django-storages/pull/1399
 .. _#1381: https://github.com/jschneier/django-storages/pull/1381
 .. _#1402: https://github.com/jschneier/django-storages/pull/1402
 .. _#1403: https://github.com/jschneier/django-storages/pull/1403
+.. _#1414: https://github.com/jschneier/django-storages/pull/1414
+.. _#1417: https://github.com/jschneier/django-storages/pull/1417
 
 
 1.14.3 (2024-05-04)
